@@ -19,13 +19,11 @@
         <java.version>17</java.version>
     </properties>
     
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <!-- 去掉了lombok依赖 -->
-    </dependencies>
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <optional>true</optional>
+</dependency>
     
     <build>
         <plugins>
