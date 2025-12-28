@@ -11,22 +11,63 @@ public class AuthController {
         return Response.success("登录成功");
     }
     
-    @Data
+    // 移除 @Data 注解，手动写getter/setter
     static class LoginRequest {
         private String username;
         private String password;
+        
+        // 手动添加getter/setter
+        public String getUsername() {
+            return username;
+        }
+        
+        public void setUsername(String username) {
+            this.username = username;
+        }
+        
+        public String getPassword() {
+            return password;
+        }
+        
+        public void setPassword(String password) {
+            this.password = password;
+        }
     }
     
-    @Data
     static class Response {
         private int code;
         private String message;
         private Object data;
         
+        // getter/setter
+        public int getCode() {
+            return code;
+        }
+        
+        public void setCode(int code) {
+            this.code = code;
+        }
+        
+        public String getMessage() {
+            return message;
+        }
+        
+        public void setMessage(String message) {
+            this.message = message;
+        }
+        
+        public Object getData() {
+            return data;
+        }
+        
+        public void setData(Object data) {
+            this.data = data;
+        }
+        
         public static Response success(String message) {
             Response response = new Response();
-            response.code = 200;
-            response.message = message;
+            response.setCode(200);
+            response.setMessage(message);
             return response;
         }
     }
