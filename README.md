@@ -6,11 +6,11 @@
 2.npm install
 3.npm run dev
 
-## 启动（供参考）
+## 启动（仅供参考）
 1. 前端: `npm run dev:front`
 2. 后端: `mvn spring-boot:run` 或 `npm run dev:back`
 
-## 访问
+## 访问（仅供参考）
 - 前端: http://localhost:3000
 - 后端API: http://localhost:8080/api  
 
