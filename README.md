@@ -6,7 +6,7 @@
 2.npm install
 3.npm run dev
 
-## 启动
+## 启动（供参考）
 1. 前端: `npm run dev:front`
 2. 后端: `mvn spring-boot:run` 或 `npm run dev:back`
 
