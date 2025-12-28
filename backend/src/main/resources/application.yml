@@ -4,3 +4,7 @@ server:
 spring:
   application:
     name: news-backend
+
+logging:
+  level:
+    com.demo: INFO
