@@ -1,13 +1,16 @@
+// 文件名改为 index.js，内容改为：
 import { createRouter, createWebHistory } from 'vue-router'
+import Home from '../views/Home.vue'
+import Login from '../views/Login.vue'
 
 const routes = [
   {
     path: '/',
-    component: () => import('../views/Home.vue')
+    component: Home
   },
   {
     path: '/login',
-    component: () => import('../views/Login.vue')
+    component: Login
   }
 ]
 
